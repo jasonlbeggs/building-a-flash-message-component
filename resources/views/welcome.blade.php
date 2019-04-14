@@ -9,9 +9,12 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="p-8">
     <div id="app">
-        <h1 class="font-bold">Example Project</h1>
+        <h1 class="font-bold text-2xl mb-3">Example Project</h1>
+
+        <trigger-form></trigger-form>
+        <flash-message></flash-message>
     </div>
 </body>
 </html>

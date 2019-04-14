@@ -2,4 +2,57 @@
 
 @tailwind components;
 
+.input {
+  @apply .border-2 .border-gray-300 .w-full .block .rounded .py-2 .px-3 .text-sm;
+}
+
+.input:focus {
+  @apply .outline-none .border-blue-300;
+}
+
+.input::placeholder {
+  @apply .text-gray-500;
+}
+
+.input:disabled {
+  @apply .bg-gray-100 .border-gray-300;
+}
+
+select.input {
+  @apply .bg-white .appearance-none .relative .pr-16;
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  @apply .uppercase .text-sm .tracking-wider .rounded .py-2 .px-3 .no-underline;
+}
+
+.btn:focus {
+  @apply .outline-none;
+}
+
+.btn-blue {
+  @apply .bg-blue-600 .text-white .border-2 .border-blue-600;
+}
+
+.btn-blue:hover {
+  @apply .bg-blue-700;
+}
+
+.btn-blue:focus {
+  @apply .border-blue-300;
+}
+
 @tailwind utilities;

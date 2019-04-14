@@ -21,16 +21,17 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "printWidth": 80,
+        "printWidth": 100,
         "tabWidth": 2,
         "useTabs": false,
         "semi": true,
         "singleQuote": true,
-        "trailingComma": "es5",
+        "trailingComma": "none",
         "bracketSpacing": true,
         "arrowParens": "avoid"
       }
     ],
+    "comma-dangle": ["warn", "never"],
     "indent": [
       2,
       2
@@ -46,6 +47,17 @@ module.exports = {
     "no-empty": 1,
     "no-duplicate-case": 1,
     "block-scoped-var": 2,
-    "vue/max-attributes-per-line": 0
+    "vue/max-attributes-per-line": 0,
+    "vue/html-self-closing": [
+      "error", {
+        "html": {
+          "void": "always",
+          "normal": "always",
+          "component": "always",
+        },
+        "svg": "always",
+        "math": "always",
+      }
+    ]
   }
 }
